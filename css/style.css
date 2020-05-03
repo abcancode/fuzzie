@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    background: linear-gradient(to right, rgba(87, 86, 151, 0.52), rgba(45, 43, 71, 0.60)), url(../img/buzzie-bg.jpg) no-repeat center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;;
+    color: green;
+}
+
+.container {
+    text-align: center;
+    margin: 7em auto;
+    width: 400px;
+    height: 400px;
+    padding-top: 20px;
+    border: 2px solid #fff;
+   border-radius: 4px;
+   color: #000080;
+}
+
+button {
+    width: 50%;
+    padding: 10px 10px;
+    margin-top: 30px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: var(--ff-primary);
+    font-weight: bold;
+    color: 	#696969;
+}
+
+button:hover {
+    color: #F0FFFF;
+    background-color: #696969;
+}
+.quiz_status {
+    font-family: var(--ff-secondary);
+}
