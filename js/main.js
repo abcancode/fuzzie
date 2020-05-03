@@ -15,11 +15,11 @@ let correctScore = 0;
 
 //The Questions to be display inside an Array of elements
 let allQuestions = [
-  ["What does HTML stand for?", "Hypertext Markup Language", "Hyperactive Text Makeover Language", "High Tension Makeover Lodge", "A"],
-  ["What does CSS stand for?", "Cascading Supersheet", "Cascading Stand Service", "Cascading StyleSheet", "C"],
-  ["Who invented HTML?", "Mark Zuckerberg", "Tim Berners-Lee", "Jef Bezos", "B"],
-  ["Who invented Bootstrap?", "Tomisin Lalude", "Mark Otto", "Mark Essien", "B"],
-  ["Who invented CSS?", "Seyi Onifade", "Eniola Agboola", "Håkon Wium Lie", "C"],
+  ["What does HTML stand for?", "Hypertext Markup Language", "Hypers Makeover Language", "Height Tension Makeup Load", "A"],
+  ["What does CSS stand for?", "Cascading Supersheet", "Cascading Standalone", "Cascading StyleSheets", "C"],
+  ["Who invented HTML?", "Mark Zuckerberg", "Tim Berners-Lee", "Jef Bezos Andre", "B"],
+  ["Who invented Bootstrap?", "Tomi Jude", "Mark Otto", "Mark Jeffs", "B"],
+  ["Who invented CSS?", "Janet John Wye", "Bruce Bents Sly", "Håkon Wium Lie", "C"],
 ];
 
 
@@ -83,13 +83,14 @@ function checkAnswer() {
     else {
         // wrong question clicked
         $("#quiz input:checked+label").css("background-color", "red");
+        $("#quiz input:checked+label").css("color", "#fff");
     }
 }
 function nextAnswer(){
     setTimeout(function () {
         currentPos++;
         showQuestion();
-    }, 1000);    
+    }, 800);    
 }
 $("document").ready(function () {
     showQuestion();
