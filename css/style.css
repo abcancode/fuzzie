@@ -5,7 +5,7 @@
 }
 
 html {
-    background: linear-gradient(to right, rgba(87, 86, 151, 0.52), rgba(45, 43, 71, 0.60)), url(../img/buzzie-bg.jpg) no-repeat center center fixed; 
+    background: linear-gradient(to right, rgba(87, 86, 151, 0.20), rgba(45, 43, 71, 0.25)), url(../img/buzzie-bg.jpg) no-repeat center center fixed; 
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -25,7 +25,7 @@ body {
     width: 400px;
     height: 400px;
     padding-top: 20px;
-    border: 2px solid #fff;
+    box-shadow: 2px 2px 7px 2px #fff;
    border-radius: 4px;
    color:#000080;
 }
@@ -34,18 +34,19 @@ button {
     width: 50%;
     padding: 10px 10px;
     margin-top: 30px;
-    border: 1px solid #696969;
     border-radius: 2px;
     cursor: pointer;
     font-size: 20px;
     font-family: var(--ff-primary);
     font-weight: bold;
     color:#000080;
+    box-shadow: 1px 1px 7px 1px #000;
 }
 
 button:hover {
     color: #F0FFFF;
     background-color:#000080;
+    box-shadow: 1px 1px 7px 1px #fff;
 }
 .quiz_status {
     font-family: var(--ff-secondary);
