@@ -74,14 +74,14 @@ function checkAnswer() {
     $("#choiceSubmit").removeAttr("disabled");
     $("#quiz label").css("background-color", "transparent");
     if ($("#quiz input:checked").val() == allQuestions[currentPos][4]) {
-        // correct question clicked
+        // correct option selected
         $("#quiz input:checked+label").css("background-color", "green");
         $("#quiz input:checked+label").css("color", "#fff");
         correctness++;
         correctScore+=3;
     }
     else {
-        // wrong question clicked
+        // wrong option selected
         $("#quiz input:checked+label").css("background-color", "red");
         $("#quiz input:checked+label").css("color", "#fff");
     }
