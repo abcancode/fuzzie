@@ -84,6 +84,7 @@ function checkAnswer() {
         // wrong option selected
         $("#quiz input:checked+label").css("background-color", "red");
         $("#quiz input:checked+label").css("color", "#fff");
+        $("allQuestions[currentPos][4]").css("color", "white");
     }
 }
 function nextAnswer(){
