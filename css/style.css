@@ -27,7 +27,7 @@ body {
     padding-top: 20px;
     border: 2px solid #fff;
    border-radius: 4px;
-   color: #000080;
+   color:#000080;
 }
 
 button {
@@ -40,12 +40,12 @@ button {
     font-size: 20px;
     font-family: var(--ff-primary);
     font-weight: bold;
-    color: 	#000080;
+    color:#000080;
 }
 
 button:hover {
     color: #F0FFFF;
-    background-color: #000080;
+    background-color:#000080;
 }
 .quiz_status {
     font-family: var(--ff-secondary);
