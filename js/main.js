@@ -15,11 +15,11 @@ let correctScore = 0;
 
 //The Questions to be display inside an Array of elements
 let allQuestions = [
-  ["What does HTML stand for?", "Hypertext Markup Language", "Hypers Makeover Language", "Height Tension Makeup Load", "A"],
-  ["What does CSS stand for?", "Cascading Supersheet", "Cascading Standalone", "Cascading StyleSheets", "C"],
+  ["What does HTML stand for?", "Hypers Makeover Language", "Hypertext Markup Language", "Height Tension Makeup Load", "B"],
+  ["What does CSS stand for?", "Cascading Supersheet", "Cascading StyleSheets", "Cascading Standalone", "B"],
   ["Who invented HTML?", "Mark Zuckerberg", "Tim Berners-Lee", "Jef Bezos Andre", "B"],
   ["Who invented Bootstrap?", "Tomi Jude", "Mark Otto", "Mark Jeffs", "B"],
-  ["Who invented CSS?", "Janet John Wye", "Bruce Bents Sly", "Håkon Wium Lie", "C"],
+  ["Who invented CSS?", "Janet John Wye", "Håkon Wium Lie", "Bruce Bents Sly", "B"],
 ];
 
 
@@ -78,6 +78,7 @@ function checkAnswer() {
         // correct option selected
         $("#quiz input:checked+label").css("background-color", "green");
         $("#quiz input:checked+label").css("color", "#fff");
+        $("#quiz input:checked+label").css("border", "1px solid #fff");
         correctness++;
         correctScore+=3;
     }
@@ -85,7 +86,8 @@ function checkAnswer() {
         // wrong option selected
         $("#quiz input:checked+label").css("background-color", "red");
         $("#quiz input:checked+label").css("color", "#fff");
-        $("allQuestions[currentPos][4]").css("color", "white");
+        $("#quiz input:radio[id=charB]+label").css("background-color", "green");
+        $("#quiz input:radio[id=charB]+label").css("color", "#fff");     
     }
 }
 function nextAnswer(){
