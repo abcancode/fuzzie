@@ -54,7 +54,7 @@ function showQuestion(){
 
   //to indicate the current Question been answered
   get("quiz_status").innerHTML = "Question "+(currentPos + 1)+"";
-
+  get("instruct").innerHTML = "Instruction: Select only one answer";
   question = allQuestions[currentPos][0];
   charA = allQuestions[currentPos][1];
   charB = allQuestions[currentPos][2];

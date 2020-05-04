@@ -21,9 +21,9 @@ body {
 
 .container {
     text-align: center;
-    margin: 7em auto;
+    margin: 5em auto;
     width: 400px;
-    height: 400px;
+    height: 450px;
     padding-top: 20px;
     box-shadow: 2px 2px 7px 2px #fff;
    border-radius: 4px;
@@ -50,4 +50,8 @@ button:hover {
 }
 .quiz_status {
     font-family: var(--ff-secondary);
+}
+
+p {
+    font-style: italic;
 }
