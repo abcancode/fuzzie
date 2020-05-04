@@ -41,6 +41,7 @@ function showQuestion(){
     score.innerHTML = "<h2>Your total attained score is: "+correctScore+" marks </h2>";
 
     get("quiz_status").innerHTML = "Game Quiz Ended";
+    get("instruct").style.display = "none";
 
     currentPos = 0;
     correctness = 0;
