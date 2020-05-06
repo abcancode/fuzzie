@@ -11,6 +11,8 @@ let charC;
 let score;
 let correctness = 0;
 let correctScore = 0;
+let score_count;
+let answered;
 
 
 //The Questions to be display inside an Array of elements
@@ -36,9 +38,12 @@ function showQuestion(){
 
 //When user has completed the Quiz
   if(currentPos >= allQuestions.length){
-    quiz.innerHTML = "<h2>You got "+correctness+" of "+allQuestions.length+" questions correctly</h2><br />";
 
-    score.innerHTML = "<h2>Your total attained score is: "+correctScore+" marks </h2>";
+    get("score_count").innerHTML = "SCORE: "+correctScore+"";
+
+    quiz.innerHTML = "<h4>You got "+correctness+" of "+allQuestions.length+" questions correctly</h4><br />";
+
+    score.innerHTML = "<h4>Your total attained score is: "+correctScore+" marks </h4><br>";
 
     get("quiz_status").innerHTML = "Game Quiz Ended";
     get("instruct").style.display = "none";
@@ -56,13 +61,15 @@ function showQuestion(){
   //to indicate the current Question been answered
   get("quiz_status").innerHTML = "Question "+(currentPos + 1)+"";
   get("instruct").innerHTML = "Instruction: Select only one answer";
+  get("score_count").innerHTML = "SCORE: "+correctScore+"";
+  
   question = allQuestions[currentPos][0];
   charA = allQuestions[currentPos][1];
   charB = allQuestions[currentPos][2];
   charC = allQuestions[currentPos][3];
 
   quiz.innerHTML = "<h2>"+question+"</h2>";
-
+  
   // appends inputs to the options of the Questions
   quiz.innerHTML += "<input onclick='checkAnswer()' type='radio' name='options' value='A' id='charA'> <label for='charA'>" + charA + "</label><br>";
   quiz.innerHTML += "<input onclick='checkAnswer()' type='radio' name='options' value='B' id='charB'> <label for='charB'>" + charB + "</label><br>";

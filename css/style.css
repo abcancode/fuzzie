@@ -22,9 +22,9 @@ body {
 
 .container {
     text-align: center;
-    margin: 5em auto;
-    width: 400px;
-    height: 450px;
+    margin: 4em auto;
+    width: 450px;
+    height: 500px;
     padding-top: 20px;
     box-shadow: 2px 2px 7px 2px grey;
    border-radius: 4px;
@@ -62,4 +62,8 @@ button:hover {
 
 p {
     font-style: italic;
+}
+
+input {
+    margin: 10px;
 }
